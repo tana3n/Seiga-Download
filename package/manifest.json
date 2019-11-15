@@ -29,8 +29,10 @@
     "persistent": false
   },
   "permissions": [
+      "http://lohas.nicoseiga.jp/",
       "https://lohas.nicoseiga.jp/",
-      "https://seiga.nicovideo.jp/",
+	  "https://seiga.nicovideo.jp/",
+	  "http://seiga.nicovideo.jp/",
       "downloads"
   ],
   "web_accessible_resources": [
