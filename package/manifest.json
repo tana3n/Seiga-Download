@@ -20,7 +20,8 @@
         "main.css"
       ],
       "matches": [
-        "https://seiga.nicovideo.jp/seiga/im*"
+		"http://seiga.nicovideo.jp/seiga/im*",
+		"https://seiga.nicovideo.jp/seiga/im*"
       ]
     }
   ],
