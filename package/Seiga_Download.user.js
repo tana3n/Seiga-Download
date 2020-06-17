@@ -2,12 +2,12 @@
 (function() {
   'use strict';
   var addLink, addLink_old, download, getFileName, getFileNameSetting, getFileName_old, getImageCreator, getImageCreatorID, getImageCreatorID_old, getImageCreator_old, getImageID, getImageID_old, getImagePageURL, getImageTitle, getImageTitle_old, getImageType, getImageURL, getImageURL_old, url;
-
+  var getImageURL2
   getImagePageURL = function() {
     var tag;
-    tag = $('#illust_link');
+    tag = $('#illust_link').attr('href')
     if (tag.length > 0) {
-      return tag.attr('href');
+      return tag;
     } else {
       return null;
     }
@@ -20,10 +20,10 @@
     if (url != null) {
       chrome.extension.sendMessage({
         type: 'url',
-        url: 'http://seiga.nicovideo.jp' + url
+        url: 'https://seiga.nicovideo.jp' + url
       }, function(response) {
         if (response != null) {
-          return dfd.resolve('http://lohas.nicoseiga.jp' + response.image_url);
+          return dfd.resolve(response.image_url);
         } else {
           return dfd.reject();
         }

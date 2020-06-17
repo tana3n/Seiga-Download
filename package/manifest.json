@@ -20,8 +20,7 @@
         "main.css"
       ],
       "matches": [
-		"http://seiga.nicovideo.jp/seiga/im*",
-		"https://seiga.nicovideo.jp/seiga/im*"
+		"*://seiga.nicovideo.jp/seiga/im*"
       ]
     }
   ],
@@ -30,11 +29,10 @@
     "persistent": false
   },
   "permissions": [
-      "http://lohas.nicoseiga.jp/",
-      "https://lohas.nicoseiga.jp/",
-	  "https://seiga.nicovideo.jp/",
-	  "http://seiga.nicovideo.jp/",
-      "downloads"
+    "*://lohas.nicoseiga.jp/",
+	  "*://seiga.nicovideo.jp/",
+	  "downloads",
+	  "storage"
   ],
   "web_accessible_resources": [
     "download.png"
