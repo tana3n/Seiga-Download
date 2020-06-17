@@ -2,10 +2,8 @@
 (function() {
   'use strict';
   var addLink, addLink_old, download, getFileName, getFileNameSetting, getFileName_old, getImageCreator, getImageCreatorID, getImageCreatorID_old, getImageCreator_old, getImageID, getImageID_old, getImagePageURL, getImageTitle, getImageTitle_old, getImageType, getImageURL, getImageURL_old, url;
-  var getImageURL2
   getImagePageURL = function() {
-    var tag;
-    tag = $('#illust_link').attr('href')
+    var = $('#illust_link').attr('href');
     if (tag.length > 0) {
       return tag;
     } else {
